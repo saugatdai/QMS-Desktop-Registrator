@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QMS Serial Registration</title>
+</head>
+<style>
+    :root {
+        --lemon-color: #5F8A27;
+        --light-lemon-color: #A9D66D;
+        --light-blue-color: #4268D6;
+        --love-color: #D67158;
+        --dark-blue-color: #1D388A;
+    }
+
+    body {
+        background: #666;
+        height: 70vh;
+        padding: 1.2rem;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+    }
+    h1{
+        color: var(--dark-blue-color);
+    }
+    form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .input-group{
+        border: 1px solid #999;
+        padding: .5rem;
+        border-radius: 10px;
+        width: 70%;  
+        margin: .5rem 0; 
+    }
+    input{
+        padding: .5rem;
+        border-radius: 10px;
+        border: 0;
+        outline: none;
+        background: #999;
+        width: 80%;
+    }
+    button{
+        padding: .5rem;
+        border-radius: 5px;
+        border: 0;
+        background-color: var(--dark-blue-color);
+        color: #999;
+        outline: none;
+    }
+    button:hover{
+        background: var(--light-lemon-color);
+        color: #000;
+        cursor: pointer;
+    }
+    .displayMsg{
+        background: var(--light-lemon-color);
+        color: #000;
+        margin: 1.2rem 0;
+        padding: 1rem;
+        display: none;
+    }
+    .makeAppear{
+        display: block;
+    }
+</style>
+
+<body>
+    <h1>QMS registration</h1>
+    <form id="form">
+        <div class="input-group">
+            <label for="serial">Serial</label>
+            <input type="text" name="serial" id="serial" required>
+        </div>
+        <div class="button-group">
+            <button id="register">Register</button>
+            <button id="recover">Recover Registration</button>
+        </div>
+    </form>
+    <secton id="message" class="displayMsg">Some messages goes here</secton>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "qmsDesktop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-packager . \"qmsDesktop\" --all"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^9.0.4",
+    "macaddress": "^0.5.1"
+  },
+  "devDependencies": {
+    "electron-packager": "^14.2.1"
+  }
+}
